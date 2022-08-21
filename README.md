@@ -1,4 +1,4 @@
-# React Quiz App
+# Quiz App
 
 ### Starting the server
 
