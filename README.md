@@ -1,7 +1,5 @@
 # React Quiz App
 
-## Getting started
-
 ### Starting the server
 
 1. clone directory to local machine
