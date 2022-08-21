@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 body {
-    background: rgb(70, 23, 143);
+    background: linear-gradient(to bottom, #282828 0%, #111 80% );
     color: white;
 }

@@ -1,0 +1,198 @@
+/* RESULTS SETUP */
+.results-container {
+    animation: fadeIn 1s ease-in;
+    padding: 2rem 2rem 1rem;
+    min-height: 100vh;
+}
+.results-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* RESULTS HEADER */
+.results-top-box {
+    position: relative;
+    background-color: #292929;
+    margin-top: 4rem;
+    padding: 2.25rem;
+    width: 57.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -2px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+    border-radius: .5rem;
+}
+.results-top-text {
+    text-align: center;
+}
+.results-top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#return-home-type {
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding-bottom: .75rem;
+}
+.return-home-wrapper {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 4px;
+    padding: .5rem .75rem;
+    background-color: rgba(200, 200, 200, 0.175);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.25) 0px -2px 0px inset;
+    cursor: pointer;
+}
+#returnHomeIcon {
+    font-size: 3.25rem;
+}
+#results-message {
+    font-size: 3.75rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.results-top-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: .125rem;
+}
+.results-top-text h4 {
+    font-size: 2.5rem;
+    padding: .5rem 0 1.75rem;
+}
+.results-top-text h4 span:first-of-type {
+    color: #51AC56;
+}
+.results-top-text h4 span:last-of-type {
+    padding: 0 .25rem;
+}
+.results-top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: .65rem;
+}
+.results-top-buttons button {
+    cursor: pointer;
+    width: 10.5rem;
+    height: 4.5rem;
+    color: #333;
+    background-color: #7eb4e6;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.25) 0px -3px 0px inset;
+    border-radius: 4px;
+    font-size: 1.85rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.1);
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: all .1s ease;
+}
+.results-top-buttons button:disabled {
+    filter: grayscale(.75) opacity(.75) brightness(.75);
+}
+
+/* RESULTS BODY */
+.results-bottom-box {
+    margin: 4rem;
+    background-color: #292929;
+    border-radius: .5rem;
+    width: 95rem;
+    box-shadow: rgba(45,45,45,0.5) -3px -3px 1px inset, rgba(45,45,45,0.5) 3px 3px 1px inset;
+}
+.result-item {
+    border-bottom: 1px solid #555;
+}
+.result-item:last-of-type {
+    border-bottom: none;
+}
+.result-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.65rem 1.75rem;
+}
+.result-item-top h2 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.result-item-more-wrapper {
+    background-color: #51AC56;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+#result-item-more-icon {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: .125rem;
+    color: #292929;
+}
+.result-item-bottom {
+    padding: 0 1.65rem 1.65rem;
+}
+.result-item-bottom p {
+    font-size: 1.55rem;
+    padding-bottom: 1rem;
+}
+.result-item-bottom p:last-of-type {
+    padding-bottom: 0;
+}
+.result-item-bottom p span {
+    font-weight: 900;
+    padding-right: .5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+    .results-top-box {
+        margin-top: .5rem;
+        padding: 1.5rem 1rem 1.25rem;
+        width: 37.5rem;
+    }
+    .results-bottom-box {
+        margin: 2rem;
+        width: 37.5rem;
+    }
+    .return-home-wrapper {
+        position: absolute;
+        top: .6rem;
+        right: .6rem;
+        padding: .3rem .5rem;
+    }
+    #returnHomeIcon {
+        font-size: 2.85rem;
+    }
+    #return-home-type {
+        font-size: 2.65rem;
+        padding-bottom: .65rem;
+    }
+    #results-message {
+        font-size: 3rem;
+    }
+    .results-top-text h2 {
+        font-size: 1.75rem;
+    }
+    .results-top-text h4 {
+        font-size: 2.125rem;
+    }
+    .results-top-buttons button {
+        width: 8.5rem;
+        height: 4rem;
+        font-size: 1.65rem;
+    }
+    .result-item-top h2 {
+        font-size: 1.65rem;
+    }
+    .result-item-more-wrapper {
+        margin-left: 1rem;
+    }
+}
